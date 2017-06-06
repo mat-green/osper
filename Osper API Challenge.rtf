@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16880\viewh12120\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+# Osper Limits Project\
+\
+For this project, we would like you to develop an API based on a real world challenge that Osper faces, namely compliance limits.\
+\
+An Osper card is a prepaid card that holds a balance.  Parents load their child's Osper card using their own debit card, ie. money goes from the parent's debit card to their child's Osper card. This debit card transaction is processed just like a normal e-commerce transaction using a standard payment processor like Stripe or Braintree. Before we take the money from the parent, we need to check that the load does not exceed compliance limits.\
+\
+The limits are as follows: \
+\
+- maximum \'a3500 worth of loads per day\
+\
+- maximum \'a3800 worth of loads per 30 days\
+\
+- maximum \'a32000 worth of loads per 365 days\
+\
+- maximum balance at any time \'a31000\
+\
+We would like you to develop an API service that handles this use case. The service should use Braintree Payments as it's backend processor.  Braintree supplies a sandbox environment and test card numbers that should be used for this project:\
+\
+https://articles.braintreepayments.com/get-started/try-it-out\
+\
+You should use UK as the location and do not need to worry about multiple currencies, just use GBP.\
+\
+\
+### Deliverables:\
+\
+You should deliver the source code with instructions for running and using the API.  You can use any language you like, though Python would be ideal for us as we will have an easier time evaluating the result.  A link to a github or similar repo that we can clone is great, but any mechanism you're comfortable with delivering to us is fine.\
+\
+\
+### Things to watch out for:\
+\
+- The most important use case is parent loading, but you may find you need to provide other capabilities in your API. It's up to you how to design it.\
+\
+- It shouldn't take any more than a few hours so keep that in mind when thinking about other capabilities, vs. just hardcoding some state.  For example you probably don't need to be dealing with creating users as part of the service.\
+\
+- You probably want to use HTTP.  Unconventional stuff is allowed, but you'll need to explain your reasoning.\
+\
+\
+### How you'll be evaluated:\
+\
+This is a beefy task, and we'll be considering many aspects of your solution, but there are three main areas that are of particular interest:\
+\
+1. Does it work?\
+\
+2. The API design\
+\
+3. Code readability and maintainability\
+\
+\
+We are excited to see your approach! \
+}
